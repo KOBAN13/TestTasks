@@ -3,11 +3,10 @@ using Cysharp.Threading.Tasks;
 using Loader;
 using UnityEngine;
 using Weapon.Configs;
-using Zenject;
 
 namespace Weapon
 {
-    public class BulletSpawn : IInitializable, IBulletSpawn
+    public class BulletSpawn : IBulletSpawn
     {
         private Factory.Factory _factory;
         private BulletConfig _bulletConfig;
@@ -21,12 +20,15 @@ namespace Weapon
             _factory = factory;
             _loader = loader;
             _referenceLoadAsset = referenceLoadAsset;
+            
+            Initialize();
         }
         
-        public async void BulletSpawnTask()
+        public async void BulletSpawnTask(float damage)
         {
             await UniTask.WaitUntil(() => _isLoadConfig);
             var bullet = _factory.CreateInitDiContainer<Bullet>(_bulletConfig.BulletPrefab, _bulletSpawnPoint.transform.position, Quaternion.LookRotation(_bulletSpawnPoint.transform.forward));
+            bullet.InitBullet(damage);
             await BulletLaunch(bullet);
         }
 
@@ -46,6 +48,7 @@ namespace Weapon
         private async UniTask ReturnBullet(Bullet bullet)
         {
             await UniTask.Delay(TimeSpan.FromSeconds(5f));
+            bullet.gameObject.SetActive(false);
         }
 
         public async void Initialize()

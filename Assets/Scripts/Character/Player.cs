@@ -26,6 +26,7 @@ namespace Character
         public void SetWeapon(IWeapon weapon)
         {
             _weapon = weapon;
+            _isFire = true;
         }
 
         public void Dispose()

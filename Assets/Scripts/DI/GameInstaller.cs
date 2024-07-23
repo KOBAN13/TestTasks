@@ -2,6 +2,7 @@
 using Character;
 using Loader;
 using Physics;
+using Spawners.EnemySpawner;
 using Spawners.PointSpawnBonuse;
 using UnityEngine;
 using Weapon;
@@ -27,7 +28,12 @@ namespace DI
             BindFactory();
             BindCreateZone();
             BindPointCamera();
-            
+            BindEnemySpawner();
+        }
+
+        private void BindEnemySpawner()
+        {
+            Container.BindInterfacesAndSelfTo<EnemySpawner>().AsSingle().NonLazy();
         }
 
         private void BindPointCamera()

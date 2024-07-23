@@ -18,8 +18,9 @@ namespace Weapon
         private readonly ISetWeapon _setWeapon;
         private readonly WeaponSpawner _weaponSpawner;
 
-        private IWeapon pistol;
-        private IWeapon rifle;
+        private IWeapon _pistol;
+        private IWeapon _rifle;
+        private IWeapon _shotgun;
 
 
         public WeaponSwitch(ICurrentWeaponBonus weaponBonus, List<IWeapon> weapons, ISetWeapon weapon, WeaponSpawner weaponSpawner)
@@ -33,8 +34,9 @@ namespace Weapon
 
         public void Initialize()
         {
-            pistol = _weapons.FirstOrDefault(pistol => pistol.GetType() == typeof(Pistol));
-            rifle = _weapons.FirstOrDefault(rifle => rifle.GetType() == typeof(Rifle));
+            _pistol = _weapons.FirstOrDefault(pistol => pistol.GetType() == typeof(Pistol));
+            _rifle = _weapons.FirstOrDefault(rifle => rifle.GetType() == typeof(Rifle));
+            _shotgun = _weapons.FirstOrDefault(rifle => rifle.GetType() == typeof(Shotgun));
             
             _weaponBonus.Subscribe(() =>
             {
@@ -46,20 +48,27 @@ namespace Weapon
             });
         }
 
-        public void Visit(PistolWeapon pistolWeapon, bool isActive)
+        public void Visit(PistolBonus pistolBonus, bool isActive)
         {
-            pistol?.GetWeaponGameObject().SetActive(isActive);
-            
-            if(isActive == false) return;
-            _setWeapon.SetWeapon(pistol);
+            SwitchWeapon(_pistol, isActive);
         }
 
-        public void Visit(RifleWeapon rifleWeapon, bool isActive)
+        public void Visit(RifleBonus rifleBonus, bool isActive)
         {
-            rifle?.GetWeaponGameObject().SetActive(isActive);
+            SwitchWeapon(_rifle, isActive);
+        }
+
+        public void Visit(ShotgunBonus shotgunBonus, bool isActive)
+        {
+            SwitchWeapon(_shotgun, isActive);
+        }
+
+        private void SwitchWeapon(IWeapon weapon, bool isActive)
+        {
+            weapon?.GetWeaponGameObject().SetActive(isActive);
             
             if(isActive == false) return;
-            _setWeapon.SetWeapon(rifle);
+            _setWeapon.SetWeapon(weapon);
         }
     }
 }

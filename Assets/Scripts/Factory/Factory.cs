@@ -1,4 +1,9 @@
-﻿using Unity.VisualScripting;
+﻿using Character;
+using Enemy;
+using Enemy.Config;
+using Enemy.Die;
+using Enemy.Walk;
+using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
 
@@ -19,6 +24,18 @@ namespace Factory
             gameObject.GameObject().transform.position = position;
             gameObject.GameObject().transform.rotation = rotation;
             return gameObject;
+        }
+
+        public HumanoidEnemy CreateInitDiContainerAndInitializeEnemy(GameObject prefab, EnemyConfig enemyConfig, Vector3 position = default, Quaternion rotation = default)
+        {
+            var enemyInstance = _diContainer.InstantiatePrefabForComponent<HumanoidEnemy>(prefab);
+            enemyInstance.transform.position = position;
+            enemyInstance.transform.rotation = rotation;
+            var enemyHealth = new Health<HumanoidEnemy>(enemyConfig.Health, new Die<HumanoidEnemy>(), enemyInstance);
+            
+            enemyInstance.InitEnemy(enemyHealth, new Damage(enemyInstance), new EnemyWalk(_diContainer.Resolve<ITarget>(), enemyConfig.Speed));
+
+            return enemyInstance;
         }
 
         public T GetInjection<T>() where T : new()

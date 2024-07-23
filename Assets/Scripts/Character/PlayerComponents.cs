@@ -6,7 +6,7 @@ using Weapon.WeaponBonus;
 namespace Character
 {
     [RequireComponent(typeof(CharacterController))]
-    public class PlayerComponents : MonoBehaviour, ICurrentWeaponBonus
+    public class PlayerComponents : MonoBehaviour, ICurrentWeaponBonus, ITarget
     {
         private readonly ReactiveProperty<WeaponBonus> CurrentWeaponBonus = new();
         [field: SerializeField] public CharacterController CharacterController { get; private set; }
@@ -28,6 +28,11 @@ namespace Character
         public WeaponBonus GetCurrentWeaponBonus()
         {
             return CurrentWeaponBonus.Value;
+        }
+
+        public Vector3 GetTarget()
+        {
+            return transform.position;
         }
     }
     public interface ICurrentWeaponBonus

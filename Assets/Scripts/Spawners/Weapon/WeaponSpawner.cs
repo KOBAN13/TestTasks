@@ -58,8 +58,9 @@ namespace Spawners.Weapon
             
             _dictionary = new()
             {
-                {typeof(PistolWeapon), await _loader.LoadResourcesUsingReference(_referenceLoadAsset.PistolBonus)},
-                {typeof(RifleWeapon), await _loader.LoadResourcesUsingReference(_referenceLoadAsset.RifleBonus)}
+                {typeof(PistolBonus), await _loader.LoadResourcesUsingReference(_referenceLoadAsset.PistolBonus)},
+                {typeof(RifleBonus), await _loader.LoadResourcesUsingReference(_referenceLoadAsset.RifleBonus)},
+                {typeof(ShotgunBonus), await _loader.LoadResourcesUsingReference(_referenceLoadAsset.ShotgunBonus)}
             };
 
             Observable

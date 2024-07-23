@@ -42,6 +42,29 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38566deb4b3171e489d92de25c135956
+    m_Address: ShotgunConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b90f9ef9e25af848bcdaf296bacd58b
+    m_Address: OrdinaryEnemy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - enemy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bc8793903fb0e4479ece4c6ca7771e0
+    m_Address: NimbleEnemy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - enemy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f7a5949db220d84198c3be0ceb5daf6
+    m_Address: ArmoredEnemy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - enemy
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 744e7568d152da64ca94f59c6236cf37, type: 2}
   m_SchemaSet:

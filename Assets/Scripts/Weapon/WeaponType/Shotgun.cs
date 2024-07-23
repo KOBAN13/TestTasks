@@ -6,7 +6,7 @@ using Zenject;
 
 namespace Weapon
 {
-    public class Pistol : MonoBehaviour, IWeapon
+    public class Shotgun : MonoBehaviour, IWeapon
     {
         [field: SerializeField] public WeaponConfig WeaponConfig { get; private set; }
         private IBulletSpawn _bulletSpawn;
@@ -34,7 +34,7 @@ namespace Weapon
         private void OnEnable()
         {
             _fireSub = _fireSubject.Throttle(TimeSpan.FromSeconds(1 / WeaponConfig.SpeedFireInSecond))
-                .Subscribe(_ => _bulletSpawn.BulletSpawnTask());
+                .Subscribe(_ => _bulletSpawn.BulletSpawnTask(WeaponConfig.Damage));
         }
 
         private void OnDisable()

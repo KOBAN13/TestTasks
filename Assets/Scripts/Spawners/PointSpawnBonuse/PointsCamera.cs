@@ -11,7 +11,7 @@ namespace Spawners.PointSpawnBonuse
         private float _halfHeight;
         private float _halfWight;
         private Transform _transformCamera;
-        private float radius = 20f;
+        private float radius = 2f;
 
         public PointsCamera(PlayerComponents playerComponents)
         {
@@ -39,7 +39,7 @@ namespace Spawners.PointSpawnBonuse
                 {
                     x = random.Next((int)(_transformCamera.position.x - _halfWight - radius), (int)(_transformCamera.position.x + _halfWight + radius));
                     z = random.Next((int)(_transformCamera.position.z - _halfHeight - radius), (int)(_transformCamera.position.z + _halfHeight + radius));
-                    position = new Vector3(x, 0f, z);
+                    position = new Vector3(x, 1f, z);
                 }
                 else
                 {

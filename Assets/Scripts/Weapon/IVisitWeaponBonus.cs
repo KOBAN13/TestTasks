@@ -4,7 +4,8 @@ namespace Weapon
 {
     public interface IVisitWeaponBonus
     {
-        void Visit(PistolWeapon pistolWeapon, bool isActive);
-        void Visit(RifleWeapon rifleWeapon, bool isActive);
+        void Visit(PistolBonus pistolBonus, bool isActive);
+        void Visit(RifleBonus rifleBonus, bool isActive);
+        void Visit(ShotgunBonus shotgunBonus, bool isActive);
     }
 }

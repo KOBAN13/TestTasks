@@ -10,6 +10,7 @@ namespace DI
     {
         [SerializeField] private Pistol _pistol;
         [SerializeField] private Rifle _rifle;
+        [SerializeField] private Shotgun _shotgun;
         public override void InstallBindings()
         {
             BindBulletSpawn();
@@ -25,9 +26,9 @@ namespace DI
 
         private List<IWeapon> GetWeapons()
         {
-            return new List<IWeapon>()
+            return new List<IWeapon>
             {
-                _pistol, _rifle
+                _pistol, _rifle, _shotgun
             };
         }
 
@@ -39,10 +40,14 @@ namespace DI
 
         private void BindBulletSpawn()
         {
-            Container.BindInterfacesAndSelfTo<BulletSpawn>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<BulletSpawn>().AsSingle().WhenInjectedInto(typeof(Pistol), typeof(Rifle))
+                .NonLazy();
+            Container.BindInterfacesAndSelfTo<ShotgunBulletSpawn>().AsSingle().WhenInjectedInto(typeof(Shotgun))
+                .NonLazy();
 
-            Container.BindInterfacesAndSelfTo<Pistol>().FromInstance(_pistol).AsSingle().WhenInjectedInto<BulletSpawn>().NonLazy();
-            Container.BindInterfacesAndSelfTo<Rifle>().FromInstance(_rifle).AsSingle().WhenInjectedInto<BulletSpawn>().NonLazy();
+            Container.BindInterfacesAndSelfTo<Pistol>().FromInstance(_pistol).AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<Rifle>().FromInstance(_rifle).AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<Shotgun>().FromInstance(_shotgun).AsSingle().NonLazy(); 
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Weapon.WeaponBonus
 {
-    public class RifleWeapon : WeaponBonus
+    public class RifleBonus : WeaponBonus
     {
         private void OnEnable()
         {
