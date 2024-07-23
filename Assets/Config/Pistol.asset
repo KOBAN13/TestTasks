@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f198695b97ab42498b0a9eb3a9962a72, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  <Damage>k__BackingField: 3
+  <SpeedFireInSecond>k__BackingField: 2
+  <WeaponPrefab>k__BackingField: {fileID: 767886722913236474, guid: ef1fa8b3460a519428d239d634ddadf4,
+    type: 3}
