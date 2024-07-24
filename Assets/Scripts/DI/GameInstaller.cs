@@ -2,6 +2,7 @@
 using Character;
 using Loader;
 using Physics;
+using Spawners.BonusSpawn;
 using Spawners.EnemySpawner;
 using Spawners.PointSpawnBonuse;
 using UnityEngine;
@@ -29,6 +30,12 @@ namespace DI
             BindCreateZone();
             BindPointCamera();
             BindEnemySpawner();
+            BindBonusSpawner();
+        }
+
+        private void BindBonusSpawner()
+        {
+            Container.BindInterfacesAndSelfTo<BuffSpawn>().AsSingle().NonLazy();
         }
 
         private void BindEnemySpawner()
@@ -65,6 +72,7 @@ namespace DI
         
         private void BindPlayer()
         {
+            Container.BindInterfacesAndSelfTo<PlayerBaff>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<Player>().AsSingle().NonLazy();
         }
 

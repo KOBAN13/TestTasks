@@ -68,7 +68,6 @@ namespace Spawners.Weapon
                 .Subscribe(_ =>
                 {
                     StartSpawn().Forget();
-                    Debug.LogWarning("спавн");
                 })
                 .AddTo(_compositeDisposable);
         }

@@ -1,9 +1,7 @@
 ﻿using System;
 using Character;
 using UniRx;
-using UnityEngine;
 using UnityEngine.AI;
-using Zenject;
 
 namespace Enemy.Walk
 {

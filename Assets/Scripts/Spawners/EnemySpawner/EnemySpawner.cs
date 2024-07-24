@@ -33,12 +33,18 @@ namespace Spawners.EnemySpawner
         { 
             _enemyConfigs = await _loader.LoadAllResourcesUseLabel<EnemyConfig>(_referenceLoadAsset.EnemyConfigs);
 
+            var timeToSpawn = 2f;
             Observable
-                .Timer(TimeSpan.FromSeconds(2f), TimeSpan.FromSeconds(2f))
+                .Timer(TimeSpan.FromSeconds(timeToSpawn), TimeSpan.FromSeconds(timeToSpawn))
                 .Subscribe(_ =>
                 {
                     StartSpawn();
                 })
+                .AddTo(_compositeDisposable);
+
+            Observable
+                .Timer(TimeSpan.FromSeconds(10f), TimeSpan.FromSeconds(10f))
+                .Subscribe(_ => timeToSpawn = Mathf.Clamp(timeToSpawn - 0.1f, 0.5f, 2f))
                 .AddTo(_compositeDisposable);
         }
         
@@ -54,7 +60,6 @@ namespace Spawners.EnemySpawner
             if (Mathf.Abs(_enemyConfigs.Sum(x => x.CoefficientSpawn)) - 1f > float.Epsilon) throw new FormatException();
 
             var value = Random.Range(0f, 1f);
-            Debug.Log(value);
             
             var cumulativeChance = 0f;
             

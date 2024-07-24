@@ -17,5 +17,6 @@ namespace Loader
         [field: SerializeField] public AssetReferenceT<GameObject> RifleBonus { get; private set; }
         [field: SerializeField] public AssetReferenceT<GameObject> ShotgunBonus { get; private set; }
         [field: SerializeField] public AssetLabelReference EnemyConfigs { get; private set; }
+        [field: SerializeField] public AssetLabelReference BonusPrefab { get; private set; }
     }
 }

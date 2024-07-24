@@ -9,22 +9,17 @@ public class InputSystemPC : IInputSystem, IInitializable, IDisposable
 {
     private NewInputSystem _input;
     private CompositeDisposable _compositeDisposable = new();
-    public Vector2ReactiveProperty MoveInput { get; } = new();
+    public Vector2 Input { get; private set; }
     public Vector3ReactiveProperty MouseClick { get; } = new();
 
     public InputSystemPC(NewInputSystem input)
     {
         _input = input;
     }
-    
-    private void Movable()
-    {
-        MoveInput.Value = GetMovement();
-    }
 
-    private Vector2 GetMovement()
+    private void GetMovement()
     {
-        return _input.Move.MoveWithWASD.ReadValue<Vector2>();
+        Input = _input.Move.MoveWithWASD.ReadValue<Vector2>();
     }
 
     public void Initialize()
@@ -36,7 +31,7 @@ public class InputSystemPC : IInputSystem, IInitializable, IDisposable
             .EveryUpdate()
             .Subscribe(_ =>
             {
-                Movable();
+                GetMovement();
             })
             .AddTo(_compositeDisposable);
         
@@ -44,7 +39,7 @@ public class InputSystemPC : IInputSystem, IInitializable, IDisposable
 
     private void OnFire(InputAction.CallbackContext obj)
     {
-        MouseClick.Value = Input.mousePosition;
+        MouseClick.Value = UnityEngine.Input.mousePosition;
     }
 
     public void Dispose()
