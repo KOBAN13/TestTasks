@@ -26,5 +26,10 @@ namespace Enemy
         {
             _enemyMove.InitMove(GetComponent<NavMeshAgent>());
         }
+
+        private void OnEnable()
+        {
+            _enemyMove.Dispose();
+        }
     }
 }

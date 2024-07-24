@@ -4,10 +4,11 @@ using UnityEngine;
 
 namespace Spawners.BonusSpawn
 {
-    public class Timer
+    public class Timer : IDisposable
     {
         private readonly float _time;
         private readonly Action _delegateWithTimerStop;
+        private readonly CompositeDisposable _compositeDisposable = new();
 
         public Timer(float time, Action delegateWithTimerStop)
         {
@@ -23,7 +24,15 @@ namespace Spawners.BonusSpawn
                 {
                     _delegateWithTimerStop();
                     Debug.Log($"конец бафа");
-                });
+                    Dispose();
+                    
+                }).AddTo(_compositeDisposable);
+        }
+
+        public void Dispose()
+        {
+            _compositeDisposable?.Clear();
+            _compositeDisposable?.Dispose();
         }
     }
 }

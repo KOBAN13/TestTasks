@@ -12,7 +12,6 @@ namespace Enemy.Walk
         private NavMeshAgent _navMeshAgent;
         private CompositeDisposable _compositeDisposable = new();
         
-        
         public EnemyWalk(ITarget target, float speed)
         {
             _target = target;
