@@ -1,4 +1,5 @@
 ﻿using Character;
+using Character.Score;
 using Enemy;
 using Enemy.Config;
 using Enemy.Die;
@@ -31,11 +32,16 @@ namespace Factory
             var enemyInstance = _diContainer.InstantiatePrefabForComponent<HumanoidEnemy>(prefab);
             enemyInstance.transform.position = position;
             enemyInstance.transform.rotation = rotation;
-            var enemyHealth = new Health<HumanoidEnemy>(enemyConfig.Health, new Die<HumanoidEnemy>(), enemyInstance);
+            var enemyHealth = new Health<HumanoidEnemy>(enemyConfig.Health, CreateDieComponent<HumanoidEnemy>(), enemyInstance);
             
-            enemyInstance.InitEnemy(enemyHealth, new Damage(enemyInstance), new EnemyWalk(_diContainer.Resolve<ITarget>(), enemyConfig.Speed));
+            enemyInstance.InitEnemy(enemyHealth, new Damage(enemyInstance), new EnemyWalk(_diContainer.Resolve<ITarget>(), enemyConfig.Speed), enemyConfig.ScoreCount);
 
             return enemyInstance;
+        }
+
+        public Die<T> CreateDieComponent<T>() where T : MonoBehaviour
+        {
+            return new Die<T>(_diContainer.Resolve<IScore>());
         }
 
         public T GetInjection<T>() where T : new()

@@ -15,5 +15,6 @@ MonoBehaviour:
   <Health>k__BackingField: 10
   <Speed>k__BackingField: 4
   <CoefficientSpawn>k__BackingField: 0.3
+  <ScoreCount>k__BackingField: 12
   <EnemyPrefab>k__BackingField: {fileID: 2541104321379823129, guid: fd212e5c9fec4984c91f94fea15db72d,
     type: 3}

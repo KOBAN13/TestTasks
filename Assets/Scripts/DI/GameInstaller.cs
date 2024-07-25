@@ -1,5 +1,6 @@
 ﻿using CameraScripts;
 using Character;
+using Character.Score;
 using Loader;
 using Physics;
 using Spawners.BonusSpawn;
@@ -19,6 +20,7 @@ namespace DI
         
         public override void InstallBindings()
         {
+            BindScoreSaver();
             BindPlayer();
             BindCamera();
             BindInput();
@@ -31,6 +33,11 @@ namespace DI
             BindPointCamera();
             BindEnemySpawner();
             BindBonusSpawner();
+        }
+
+        private void BindScoreSaver()
+        {
+            Container.BindInterfacesAndSelfTo<ScoreSaver>().AsSingle().NonLazy();
         }
 
         private void BindBonusSpawner()

@@ -33,14 +33,11 @@ namespace Spawners.BonusSpawn
         {
             _bonus = await _loader.LoadAllResourcesUseLabel<GameObject>(_referenceLoadAsset.BonusPrefab);
             
-            Debug.LogWarning("старт");
-            
             Observable
                 .Timer(TimeSpan.FromSeconds(5f), TimeSpan.FromSeconds(10f))
                 .Subscribe(_ =>
                 {
                     StartSpawn().Forget();
-                    Debug.LogWarning("спавн бонуса");
                 })
                 .AddTo(_compositeDisposable);
         }

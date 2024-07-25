@@ -11,15 +11,21 @@ namespace Spawners.Zones
     public class DieZone : MonoBehaviour
     {
         private PlayerComponents _playerComponents;
+        private Factory.Factory _factory;
+
         [Inject]
-        private void Construct(PlayerComponents playerComponents) => _playerComponents = playerComponents;
+        private void Construct(PlayerComponents playerComponents, Factory.Factory factory)
+        { 
+            _playerComponents = playerComponents;
+            _factory = factory;
+        }
         
         private void OnEnable()
         {
             var collider = GetComponent<Collider>();
             collider
                 .OnTriggerEnterAsObservable()
-                .Subscribe(_ => new Die<PlayerComponents>().Died(_playerComponents))
+                .Subscribe(_ => _factory.CreateDieComponent<PlayerComponents>().Died(_playerComponents))
                 .AddTo(this);
         }
     }

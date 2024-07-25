@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 63
+    m_Bits: 191
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -921,7 +921,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 1899511818}
   _offset: {x: 0, y: 10, z: 0}
-  abc: 0
 --- !u!4 &711491680
 Transform:
   m_ObjectHideFlags: 0

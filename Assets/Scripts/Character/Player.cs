@@ -58,8 +58,6 @@ namespace Character
 
         public void Tick()
         {
-            Debug.Log(_playerBaff.CurrentStats.Speed);
-            Debug.Log(_playerBaff.CurrentStats.IsImmortal);
             _movable.Move(_input.Input, _playerBaff.CurrentStats.Speed);
         }
     }
