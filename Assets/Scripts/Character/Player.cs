@@ -45,9 +45,9 @@ namespace Character
         public void Initialize()
         {
             _input.MouseClick.SkipLatestValueOnSubscribe()
-                .Subscribe(vector =>
+                .Subscribe(async vector =>
                 {
-                    _rotate.RotateCharacter(vector);
+                    await _rotate.RotateCharacter(vector);
                     
                     if(_isFire == false) return;
                     _weapon.Fire();

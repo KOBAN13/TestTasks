@@ -16,25 +16,36 @@ namespace Character
             _playerComponents = playerComponents;
         }
 
-        public async void RotateCharacter(Vector3 mousePosition)
+        public async UniTask RotateCharacter(Vector3 mousePosition)
         {
             CancellationTokenSource?.Cancel();
             CancellationTokenSource = new CancellationTokenSource();
             
             var ray = _playerComponents.Camera.ScreenPointToRay(mousePosition);
 
-            if (UnityEngine.Physics.Raycast(ray, out var hit, 100f, LayerMask.GetMask("Ground")))
+            if (UnityEngine.Physics.Raycast(ray, out var hitGround, 150f, LayerMask.GetMask("Ground")))
             {
-                var direction = hit.point - _playerComponents.PlayerTransform.position;
+                await  FindDirection(hitGround);
+            }
+            
+            if (UnityEngine.Physics.Raycast(ray, out var hitEnemy, 150f, LayerMask.GetMask("Enemy")))
+            {
+                await FindDirection(hitEnemy);
+            }
+            
+        }
+
+        private async UniTask FindDirection(RaycastHit hit)
+        {
+            var direction = hit.point - _playerComponents.PlayerTransform.position;
                 
-                try
-                {
-                    await Lerp(-direction);
-                }
-                catch (OperationCanceledException cancel)
-                {
-                    Debug.LogWarning($"Operation is cancelled {cancel.Message}");
-                }
+            try
+            {
+                await Lerp(-direction);
+            }
+            catch (OperationCanceledException cancel)
+            {
+                Debug.LogWarning($"Operation is cancelled {cancel.Message}");
             }
         }
 

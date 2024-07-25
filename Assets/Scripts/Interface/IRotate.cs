@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Interface
 {
     public interface IRotate
     {
-        void RotateCharacter(Vector3 mousePosition);
+        UniTask RotateCharacter(Vector3 mousePosition);
     }
 }

@@ -10,8 +10,8 @@ namespace Weapon
     {
         [field: SerializeField] public WeaponConfig WeaponConfig { get; private set; }
         private IBulletSpawn _bulletSpawn;
-        private IDisposable _fireSub;
-        private Subject<Unit> _fireSubject = new();
+        private CompositeDisposable _compositeDisposable;
+        private bool _isFired;
 
         [Inject]
         public void Construct(IBulletSpawn bulletSpawn) => _bulletSpawn = bulletSpawn;
@@ -20,7 +20,7 @@ namespace Weapon
         {
             _bulletSpawn.Init(gameObject.GetComponentInChildren<BulletPoint>());
         }
-
+        
         public GameObject GetWeaponGameObject()
         {
             return gameObject;
@@ -28,18 +28,24 @@ namespace Weapon
 
         public void Fire()
         {
-            _fireSubject.OnNext(Unit.Default);
+            if(_isFired == false) return;
+            _bulletSpawn.BulletSpawnTask(WeaponConfig.Damage);
+            _isFired = false;
         }
 
         private void OnEnable()
         {
-            _fireSub = _fireSubject.Throttle(TimeSpan.FromSeconds(1 / WeaponConfig.SpeedFireInSecond))
-                .Subscribe(_ => _bulletSpawn.BulletSpawnTask(WeaponConfig.Damage));
+            _compositeDisposable = new CompositeDisposable();
+            Observable
+                .Timer(TimeSpan.FromSeconds(1 / WeaponConfig.SpeedFireInSecond), TimeSpan.FromSeconds(1 / WeaponConfig.SpeedFireInSecond))
+                .Subscribe(_ => _isFired = true)
+                .AddTo(_compositeDisposable);
         }
 
         private void OnDisable()
         {
-            _fireSub.Dispose();
+            _compositeDisposable.Clear();
+            _compositeDisposable.Dispose();
         }
     }
 }
