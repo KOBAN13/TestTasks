@@ -29,6 +29,8 @@ namespace Weapon
         
         public void Initialize()
         {
+            _compositeDisposable = new CompositeDisposable();
+            
             Observable
                 .EveryUpdate()
                 .Where(_ => Vector3.Distance(_startPointShoot, _bullet.transform.position) > _range)

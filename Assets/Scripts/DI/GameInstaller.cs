@@ -17,6 +17,7 @@ namespace DI
         [SerializeField] private PlayerComponents _playerComponents;
         [SerializeField] private ReferenceLoadAsset _referenceLoadAsset;
         [SerializeField] private CameraFollow _cameraFollow;
+        [SerializeField] private UIManager _uiManager;
         
         public override void InstallBindings()
         {
@@ -33,6 +34,8 @@ namespace DI
             BindPointCamera();
             BindEnemySpawner();
             BindBonusSpawner();
+            BindModels();
+            BindUI();
         }
 
         private void BindScoreSaver()
@@ -103,6 +106,16 @@ namespace DI
         {
             Container.BindInterfacesAndSelfTo<Movement>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<Rotate>().AsSingle().NonLazy();
+        }
+
+        private void BindModels()
+        {
+            Container.BindInterfacesAndSelfTo<ScoreModel>().AsSingle().NonLazy();
+        }
+
+        private void BindUI()
+        {
+            Container.BindInterfacesAndSelfTo<UIManager>().FromInstance(_uiManager).AsSingle().NonLazy();
         }
     }
 }

@@ -11,7 +11,7 @@ using Random = UnityEngine.Random;
 
 namespace Spawners.EnemySpawner
 {
-    public class EnemySpawner : IInitializable
+    public class EnemySpawner : IInitializable, IDisposable
     {
         private PointsCamera _pointsCamera;
         private readonly Factory.Factory _factory;
@@ -73,6 +73,12 @@ namespace Spawners.EnemySpawner
             }
             
             return _enemyConfigs[^1];
+        }
+
+        public void Dispose()
+        {
+            _compositeDisposable?.Clear();
+            _compositeDisposable?.Dispose();
         }
     }
 }

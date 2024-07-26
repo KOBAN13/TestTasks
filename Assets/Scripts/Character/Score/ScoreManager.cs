@@ -10,11 +10,14 @@ namespace Character.Score
         private readonly JsonDataContext _jsonDataContext;
         private event Action<float> OnEnemyDie;
         private event Action OnPlayerDie;
-        private GameData _gameData = new();
+        private ScoreModel _scoreModel;
+        private readonly IShowRecord _showRecord;
 
-        public ScoreSaver(JsonDataContext jsonDataContext)
+        public ScoreSaver(JsonDataContext jsonDataContext, ScoreModel scoreModel, IShowRecord showRecord)
         {
             _jsonDataContext = jsonDataContext;
+            _scoreModel = scoreModel;
+            _showRecord = showRecord;
         }
 
         public void Dispose()
@@ -42,17 +45,17 @@ namespace Character.Score
         
         private void EnemyDie(float score)
         {
-            _gameData.score += score;
-            Debug.LogWarning(_gameData.score);
+            _scoreModel.Score.Value += score;
         }
         
         private async void PLayerDie()
         {
             await _jsonDataContext.Load();
 
-            if (_gameData.score > _jsonDataContext.Score)
+            if (_scoreModel.Score.Value > _jsonDataContext.Score)
             {
-                _jsonDataContext.Score = _gameData.score;
+                _jsonDataContext.Score = _scoreModel.Score.Value;
+                _showRecord.OnOnNewRecordScore();
                 await _jsonDataContext.Save();
             }
         }

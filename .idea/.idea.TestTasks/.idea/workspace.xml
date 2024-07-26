@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e618fd9f-3d66-47d4-a0bd-b028323174df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyKill.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyKill/HumanoidEnemyKill.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyKill/HumanoidEnemyKill.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDSTask/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDSTask/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDSTask/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDSTask/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTasks/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample01_ObservableWWW.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample01_ObservableWWW.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample02_ObservableTriggers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample02_ObservableTriggers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample03_GameObjectAsObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample03_GameObjectAsObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample04_ConvertFromUnityCallback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample04_ConvertFromUnityCallback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample05_ConvertFromCoroutine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample05_ConvertFromCoroutine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample06_ConvertToCoroutine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample06_ConvertToCoroutine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample07_OrchestratIEnumerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample07_OrchestratIEnumerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample08_DetectDoubleClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample08_DetectDoubleClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample09_EventHandling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample09_EventHandling.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample10_MainThreadDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample10_MainThreadDispatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample11_Logger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample11_Logger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12_ReactiveProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12_ReactiveProperty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoApp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/UniRx.Examples.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/UniRx.Examples.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/ReadMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous/WebRequestExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous/WebRequestExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/BooleanDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/BooleanDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CancellationDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CancellationDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CompositeDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CompositeDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DictionaryDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DictionaryDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/Disposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/Disposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DisposableExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DisposableExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ICancelable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ICancelable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/MultipleAssignmentDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/MultipleAssignmentDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/RefCountDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/RefCountDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ScheduledDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ScheduledDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SerialDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SerialDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SingleAssignmentDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SingleAssignmentDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/StableCompositeDisposable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/StableCompositeDisposable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/EventPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/EventPattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/AscynLock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/AscynLock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/CancellableTaskCompletionSource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/CancellableTaskCompletionSource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ExceptionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ExceptionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ImmutableList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ImmutableList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ListObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ListObserver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/MicroCoroutine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/MicroCoroutine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PriorityQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PriorityQueue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PromiseHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PromiseHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ScheduledItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ScheduledItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ThreadSafeQueueWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ThreadSafeQueueWorker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/UnityEqualityComparer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/UnityEqualityComparer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/BooleanNotifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/BooleanNotifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/CountNotifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/CountNotifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/MessageBroker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/MessageBroker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/ScheduledNotifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/ScheduledNotifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Aggregate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Aggregate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Awaiter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Awaiter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Blocking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Blocking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concatenate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concatenate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Conversions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Conversions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Creation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Creation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.ErrorHandling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.ErrorHandling.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Events.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.FromAsync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.FromAsync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Joins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Joins.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Paging.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Paging.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Time.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Aggregate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Aggregate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Amb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Amb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsSingleUnitObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsSingleUnitObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsUnitObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsUnitObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Buffer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Buffer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Cast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Cast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Catch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Catch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/CombineLatest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/CombineLatest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ContinueWith.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ContinueWith.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Create.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Create.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DefaultIfEmpty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DefaultIfEmpty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Defer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Defer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Delay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Delay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DelaySubscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DelaySubscription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Dematerialize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Dematerialize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Distinct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Distinct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DistinctUntilChanged.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DistinctUntilChanged.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Do.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Do.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Empty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Empty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Finally.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Finally.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/First.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/First.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ForEachAsync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ForEachAsync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/FromEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/FromEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/GroupBy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/GroupBy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/IgnoreElements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/IgnoreElements.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Last.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Last.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Materialize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Materialize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Merge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Merge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Never.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Never.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ObserveOn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ObserveOn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OfType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OfType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObservableBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObservableBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObserverBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObserverBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/PairWise.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/PairWise.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Range.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Range.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RefCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RefCount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Repeat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Repeat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RepeatSafe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RepeatSafe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Return.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Return.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Sample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Sample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Scan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Scan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Select.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Select.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectWhere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectWhere.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Single.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Single.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Skip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Skip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipWhile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipWhile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Start.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Start.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/StartWith.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/StartWith.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SubscribeOn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SubscribeOn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Switch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Switch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Synchronize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Synchronize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SynchronizedObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SynchronizedObserver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Take.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Take.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeLast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeLast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeUntil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeUntil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeWhile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeWhile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throttle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throttle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ThrottleFirst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ThrottleFirst.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TimeInterval.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TimeInterval.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timeout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timeout.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timestamp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timestamp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToArray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Wait.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Wait.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhenAll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhenAll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Where.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Where.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WithLatestFrom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WithLatestFrom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Zip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Zip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ZipLatest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ZipLatest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Pair.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Pair.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/CurrentThreadScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/CurrentThreadScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/IScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/IScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ImmediateScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ImmediateScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/Scheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/Scheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ThreadPoolScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ThreadPoolScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/BehaviorSubject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/BehaviorSubject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ConnectableObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ConnectableObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ISubject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ISubject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ReplaySubject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ReplaySubject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/Subject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/Subject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/SubjectExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/SubjectExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObserver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IOptimizedObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IOptimizedObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IProgress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Tuple.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Tuple.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Tasks.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Tasks.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Tasks/TaskObservableExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Tasks/TaskObservableExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/TimeInterval.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/TimeInterval.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Timestamped.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Timestamped.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UniRx.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UniRx.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/AsyncOperationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/AsyncOperationExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CancellationToken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CancellationToken.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CoroutineAsyncBridge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CoroutineAsyncBridge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntryExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntryExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/Logger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/Logger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableDebugExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableDebugExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/UnityDebugSink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/UnityDebugSink.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/FrameInterval.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/FrameInterval.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectableReactiveProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectableReactiveProperty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectorDisplayDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectorDisplayDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/LifetimeDisposableExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/LifetimeDisposableExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadDispatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Observable.Unity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Observable.Unity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObservableWWW.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObservableWWW.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObserveExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObserveExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/BatchFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/BatchFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrameSubscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrameSubscription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameInterval.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameInterval.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameTimeInterval.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameTimeInterval.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FromCoroutine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FromCoroutine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/RepeatUntil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/RepeatUntil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SampleFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SampleFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SubscribeOnMainThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SubscribeOnMainThread.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFirstFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFirstFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/TimeoutFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/TimeoutFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveProperty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit/ObjectPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableAnimatorTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableAnimatorTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableBeginDragTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableBeginDragTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCancelTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCancelTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCanvasGroupChangedTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCanvasGroupChangedTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollision2DTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollision2DTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollisionTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollisionTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDeselectTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDeselectTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDestroyTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDestroyTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDragTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDragTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDropTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDropTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEnableTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEnableTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEndDragTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEndDragTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEventTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEventTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableFixedUpdateTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableFixedUpdateTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableInitializePotentialDragTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableInitializePotentialDragTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableJointTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableJointTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableLateUpdateTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableLateUpdateTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMouseTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMouseTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMoveTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMoveTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableParticleTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableParticleTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerClickTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerClickTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerDownTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerDownTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerEnterTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerEnterTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerExitTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerExitTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerUpTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerUpTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableRectTransformTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableRectTransformTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableScrollTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableScrollTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSelectTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSelectTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableStateMachineTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableStateMachineTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSubmitTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSubmitTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTransformChangedTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTransformChangedTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTrigger2DTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTrigger2DTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.Component.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.Component.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateSelectedTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateSelectedTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableVisibleTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableVisibleTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityEventExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityEventExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityGraphicExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityGraphicExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityUIComponentExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityUIComponentExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/YieldInstructionCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/YieldInstructionCache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/Thread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/Thread.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/ThreadPoolScheduler_UnityWinRT.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/ThreadPoolScheduler_UnityWinRT.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/BindSignalFromBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/BindSignalFromBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/BindSignalIdToBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/BindSignalIdToBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/BindSignalToBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/BindSignalToBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/SignalCallbackWithLookupWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/SignalCallbackWithLookupWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/SignalCallbackWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/BindSignal/SignalCallbackWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/DeclareSignalAsyncTickPriorityCopyBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/DeclareSignalAsyncTickPriorityCopyBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/SignalBindingBindInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/SignalBindingBindInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/SignalDeclarationBindInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/DeclareSignal/SignalDeclarationBindInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/SignalCopyBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/SignalCopyBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/SignalTickPriorityCopyBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/Binders/SignalTickPriorityCopyBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/SignalSubscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/SignalSubscription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/SignalSubscriptionId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Internal/SignalSubscriptionId.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Main/SignalBusInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Main/SignalBusInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Main/SignalDeclarationAsyncInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Main/SignalDeclarationAsyncInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/BindingUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/BindingUtil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/CharacterStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/IBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/IBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/IBuffable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/IBuffable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/ImmortalBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/ImmortalBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/PlayerBaff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/PlayerBaff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/SpeedBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/SpeedBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/TempBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Buff/TempBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ITarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ITarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerComponents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Rotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Rotate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Score/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Score/ScoreManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/ZoneSpawnerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/ZoneSpawnerConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/ZonesConfigs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/ZonesConfigs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DI/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DI/DataInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DI/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DI/GameInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DI/WeaponInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DI/WeaponInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Config/EnemyConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Config/EnemyConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Damage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Damage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Die/Die.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Die/Die.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IDamagable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IDamagable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IHealthStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IHealthStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IInitializableEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Interface/IInitializableEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Walk/EnemyWalk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Walk/EnemyWalk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Walk/IEnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Health/Walk/IEnemyMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/HumanoidEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/HumanoidEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/Factory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/Factory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/IInputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/IInputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/IInputSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/IInputSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/InputSystemPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/InputSystemPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/InputSystemPC.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/InputSystemPC.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IMovable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IRotate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/Loader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader/ReferenceLoadAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/ReferenceLoadAsset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Physics/Gravity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Physics/Gravity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Physics/IGravityForce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Physics/IGravityForce.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerConfigs/PlayerSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerConfigs/PlayerSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/DataContextr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/DataContextr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/GameData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/JsonDataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/JsonDataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/BuffBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/BuffBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/BuffSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/BuffSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/ImmortalBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/ImmortalBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/SpeedBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/SpeedBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/BonusSpawn/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/DangerousZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/DangerousZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/EnemySpawner/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/EnemySpawner/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/PointSpawnBonuse/PointsCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/PointSpawnBonuse/PointsCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Weapon/WeaponSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Weapon/WeaponSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Zones/DecelerationZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Zones/DecelerationZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Zones/DieZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Zones/DieZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletRangeLimiter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletRangeLimiter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/BulletPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/BulletPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/BulletSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/BulletSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/IBulletSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/IBulletSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/ShotgunBulletSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/ShotgunBulletSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Configs/BulletConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Configs/BulletConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Configs/ShotgunBulletConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Configs/ShotgunBulletConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Configs/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Configs/WeaponConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/IVisitWeaponBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/IVisitWeaponBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/IWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/IWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/PistolBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/PistolBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/RifleBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/RifleBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/ShotgunBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/ShotgunBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/WeaponBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponBonus/WeaponBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponSwitch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponType/Pistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponType/Pistol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponType/Rifle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponType/Rifle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponType/Shotgun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponType/Shotgun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/38/09b67314/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@cdf88c6a6a/Runtime/UniTask.WaitUntil.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@cdf88c6a6a/Runtime/UniTaskScheduler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@cdf88c6a6a/Runtime/UniTaskSynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2jlpNhJ2f21Dg8jFzWHl6sFmn4p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.94017094",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\KOBAN13\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\KOBAN13\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\KOBAN13\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="Z:\Новая папка\2023.2.18f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath Z:\TestTasks -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="Z:\TestTasks" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="Z:\Новая папка\2023.2.18f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath Z:\TestTasks -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="Z:\TestTasks" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19088">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="19088" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e618fd9f-3d66-47d4-a0bd-b028323174df" name="Changes" comment="" />
+      <created>1721971486076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721971486076</updated>
+      <workItem from="1721971488575" duration="13114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Weapon/BulletSpawn/BulletSpawn.cs</url>
+          <line>69</line>
+          <properties documentPath="Z:\TestTasks\Assets\Scripts\Weapon\BulletSpawn\BulletSpawn.cs" containingFunctionPresentation="Method 'ReturnBullet'">
+            <startOffsets>
+              <option value="2455" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2490" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

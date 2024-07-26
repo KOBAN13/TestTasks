@@ -3,6 +3,7 @@ using Character.Score;
 using Enemy;
 using Enemy.Config;
 using Enemy.Die;
+using Enemy.EnemyKill;
 using Enemy.Walk;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -34,17 +35,21 @@ namespace Factory
             enemyInstance.transform.rotation = rotation;
             var enemyHealth = new Health<HumanoidEnemy>(enemyConfig.Health, CreateDieComponent<HumanoidEnemy>(), enemyInstance);
             
-            enemyInstance.InitEnemy(enemyHealth, new Damage(enemyInstance), new EnemyWalk(_diContainer.Resolve<ITarget>(), enemyConfig.Speed), enemyConfig.ScoreCount);
+            enemyInstance.InitEnemy(enemyHealth, 
+                new Damage(enemyInstance), 
+                new EnemyWalk(GetInjection<ITarget>(), enemyConfig.Speed), 
+                new HumanoidEnemyKill(CreateDieComponent<PlayerComponents>() ,GetInjection<PlayerBaff>()),
+                enemyConfig.ScoreCount);
 
             return enemyInstance;
         }
 
         public Die<T> CreateDieComponent<T>() where T : MonoBehaviour
         {
-            return new Die<T>(_diContainer.Resolve<IScore>());
+            return new Die<T>(GetInjection<IScore>(), GetInjection<IMenu>());
         }
 
-        public T GetInjection<T>() where T : new()
+        public T GetInjection<T>()
         {
             return _diContainer.Resolve<T>();
         }

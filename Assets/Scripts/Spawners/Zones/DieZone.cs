@@ -22,8 +22,7 @@ namespace Spawners.Zones
         
         private void OnEnable()
         {
-            var collider = GetComponent<Collider>();
-            collider
+            this
                 .OnTriggerEnterAsObservable()
                 .Subscribe(_ => _factory.CreateDieComponent<PlayerComponents>().Died(_playerComponents))
                 .AddTo(this);

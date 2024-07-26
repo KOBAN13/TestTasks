@@ -1,11 +1,14 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using Loader;
 using UnityEngine;
 using Weapon.Configs;
+using Random = UnityEngine.Random;
 
 namespace Weapon
 {
-    public class ShotgunBulletSpawn : IBulletSpawn
+    public class ShotgunBulletSpawn : IBulletSpawn, IDisposable
     {
         private Factory.Factory _factory;
         private ShotgunBulletConfig _bulletConfig;
@@ -13,6 +16,8 @@ namespace Weapon
         private ReferenceLoadAsset _referenceLoadAsset;
         private bool _isLoadConfig;
         private Transform _bulletSpawnPoint;
+        private CancellationTokenSource _cancellationToken = new();
+        private BulletRangeLimiter _bulletRangeLimiter;
 
         public ShotgunBulletSpawn(Factory.Factory factory, Loader.Loader loader, ReferenceLoadAsset referenceLoadAsset)
         {
@@ -22,18 +27,23 @@ namespace Weapon
             Initialize();
         }
         
-        public async void BulletSpawnTask(float damage)
+        public async void BulletSpawnTask(float damage, Transform position)
         {
-            await UniTask.WaitUntil(() => _isLoadConfig);
-            BulletCalculate(damage);
+            _bulletSpawnPoint = position;
+            _cancellationToken = new CancellationTokenSource();
+            try
+            {
+                await UniTask.WaitUntil(() => _isLoadConfig, cancellationToken: _cancellationToken.Token);
+                BulletCalculate(damage);
+            }
+            catch (OperationCanceledException exception)
+            {
+                Debug.LogWarning($"{exception.Message}");
+            }
         }
 
-        public void Init(BulletPoint bulletSpawnPoint)
-        {
-            _bulletSpawnPoint = bulletSpawnPoint.transform;
-        }
 
-        public async void Initialize()
+        private async void Initialize()
         {
             _bulletConfig = await _loader.LoadResourcesUsingReference(_referenceLoadAsset.BulletShotgunConfig) as ShotgunBulletConfig;
             _isLoadConfig = true;
@@ -50,11 +60,11 @@ namespace Weapon
 
                 var bullet = CreateBullet();
                 bullet.InitBullet(damage);
-                var bulletLimiter = new BulletRangeLimiter();
-                bulletLimiter.PointSpawnBullet(bullet.transform.position);
-                bulletLimiter.CurrentBulletPosition(bullet);
-                bulletLimiter.SetRange(_bulletConfig.BulletRange);
-                bulletLimiter.Initialize();
+                _bulletRangeLimiter = new BulletRangeLimiter();
+                _bulletRangeLimiter.PointSpawnBullet(bullet.transform.position);
+                _bulletRangeLimiter.CurrentBulletPosition(bullet);
+                _bulletRangeLimiter.SetRange(_bulletConfig.BulletRange);
+                _bulletRangeLimiter.Initialize();
                 BulletLaunch(bullet, direction);
             }
         }
@@ -69,6 +79,12 @@ namespace Weapon
             var bulletRigidbody = bullet.GetComponent<Rigidbody>();
             Vector3 velocity = direction * _bulletConfig.BulletSpeed;
             bulletRigidbody.velocity = velocity;   
+        }
+
+        public void Dispose()
+        {
+            _bulletRangeLimiter?.Dispose();
+            _cancellationToken?.Cancel();
         }
     }
 }

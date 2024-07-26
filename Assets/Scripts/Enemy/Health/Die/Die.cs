@@ -1,17 +1,18 @@
 ﻿using Character;
 using Character.Score;
 using UnityEngine;
-using Zenject;
 
 namespace Enemy.Die
 {
     public class Die<T> where T : MonoBehaviour
     {
         private IScore _score;
+        private readonly IMenu _menu;
 
-        public Die(IScore score)
+        public Die(IScore score, IMenu menu)
         {
             _score = score;
+            _menu = menu;
         }
 
         public void Died(T objectDie)
@@ -24,6 +25,7 @@ namespace Enemy.Die
             if (typeof(T) == typeof(PlayerComponents))
             {
                 _score.OnOnPlayerDie();
+                _menu.OnOnPlayerDied();
             }
             
             objectDie.gameObject.SetActive(false);

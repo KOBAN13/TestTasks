@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using Cysharp.Threading.Tasks.Triggers;
 using Loader;
 using Spawners.PointSpawnBonuse;
 using UniRx;
@@ -25,6 +26,7 @@ namespace Spawners.Weapon
         private Dictionary<Type, GameObject> _dictionary;
         private (Type key, GameObject gameObject) _currentWeapon;
         private CompositeDisposable _compositeDisposable = new();
+        private CancellationTokenSource _cancellationToken = new();
 
         public WeaponSpawner(PointsCamera pointsCamera, Factory.Factory factory, Loader.Loader loader, ReferenceLoadAsset referenceLoadAsset)
         {
@@ -67,7 +69,15 @@ namespace Spawners.Weapon
                 .Timer(TimeSpan.FromSeconds(10f), TimeSpan.FromSeconds(15f))
                 .Subscribe(_ =>
                 {
-                    StartSpawn().Forget();
+                    _cancellationToken = new CancellationTokenSource();
+                    try
+                    {
+                        StartSpawn().Forget();
+                    }
+                    catch(OperationCanceledException ex)
+                    {
+                        Debug.LogWarning(ex.Message);
+                    }
                 })
                 .AddTo(_compositeDisposable);
         }
@@ -77,8 +87,7 @@ namespace Spawners.Weapon
             var gameObject = _factory.CreateInitDiContainer<WeaponBonus>(_dictionary[GetRandomKey()], _pointsCamera.Visible(),
                 Quaternion.identity);
 
-            await UniTask.Delay(TimeSpan.FromSeconds(10f));
-            _loader.ClearMemoryInstance(gameObject.GameObject());
+            await UniTask.Delay(TimeSpan.FromSeconds(10f), cancellationToken: _cancellationToken.Token);
             gameObject.GameObject().SetActive(false);
         }
 
@@ -101,6 +110,7 @@ namespace Spawners.Weapon
             OnWeaponBonus -= CurrentWeapon;
             _compositeDisposable.Clear();
             _compositeDisposable.Dispose();
+            _cancellationToken.Cancel();
         }
     }
 }

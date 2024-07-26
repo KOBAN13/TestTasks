@@ -40,6 +40,7 @@ namespace Character
         {
             _compositeDisposable.Clear();
             _compositeDisposable.Dispose();
+            _isFire = false;
         }
 
         public void Initialize()
